@@ -1,0 +1,231 @@
+// Main Sass File
+$bg-color:#fff ;
+$secondary-color:#0065e1;
+$font-color:#223;
+$primary-font:"playfair display", serif;
+
+*
+{
+    box-sizing: border-box; 
+}
+body
+{
+// height: 8000px;
+
+.navbar
+{
+    .navbar-brand
+    {
+        transition-duration: .5s ;
+    }
+    .navbar-brand:hover
+    {
+        transform: scale(1.5) translate(15px);
+        
+        color: #0065e1;
+    }
+}
+section
+{
+    .section-title
+    {
+        font-size: 40px;
+        font-weight: 600;
+        font-family: $primary-font;
+    }
+
+    h3,.h3
+    {
+         font-family: $primary-font;
+    }
+}
+
+.details
+{
+    font-size: 115%;
+    // font-family: roboto, sans-serif;
+    // font-weight: 300;
+    word-spacing: 2px;
+}
+h3.title
+{
+    font-family: $primary-font;
+    font-size: 2.5rem;
+    font-weight: bold !important;
+    
+}
+}
+nav
+{
+   
+    ul .nav-item
+    {
+        padding:3px 10px;
+    }
+}
+#main-layout
+{
+    padding-top: 120px;
+
+    .custom-speach
+    {
+        padding-top: 120px;
+        padding-left: 20px;
+        .title
+        {
+            font-size: 5vmax ;
+            line-height: 1.1em;
+        }
+   
+    }
+    .fa
+    {
+    color: $secondary-color;
+    }
+    h3 
+    {
+        font-family: $primary-font;
+        font-weight: 500;
+       
+    }
+    .features >.borderd
+    {
+        border-right: .5px solid #e9eaed;
+    }
+    .features h3 
+    {
+        margin-top: 20px;
+        
+    }
+}
+#services
+{
+   
+    .nice-card 
+    {
+        
+         >div
+        {
+        
+        padding: 40px 25px;
+        
+        border: 1px solid #e9eaed;
+        margin-bottom: 40px;
+        color: #223;
+        transition: ease-in-out 0.5s;
+        }
+        >div:hover
+        {
+            background-color: $secondary-color;
+            cursor: pointer;
+            color: $bg-color;
+            transform: scale(1.1)  ;
+            
+
+            
+        }
+        .fa
+        {
+            border-radius: 50%;
+            background-color: #eee5db;
+            color: #722;
+            padding: 10px;
+            font-size: 25px;
+            
+        }
+        p 
+        {
+            margin-top: 20px;
+        }
+    }
+
+    
+}
+#opinion
+{
+    min-height: 700px;
+    background: url(../img/bed-empty-floor-236380.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .overlay
+    {
+        background-color: rgba(13, 14, 116, 0.8);
+        min-height: 700px;
+        position: relative;
+        top: 0;
+        left: 0;
+
+    }
+    z-index: 1;
+    .carousel
+    {
+      margin-top: 350px;;
+    }
+}
+#regervation
+{
+    .regervation-inner
+    {
+        width: 90%;
+        box-shadow: 0 5px 10px 0 rgba(0,47,104,.1);
+        min-height: 400px;
+        margin: auto;
+        position: relative;
+        top: -130px;
+        background-color: white; 
+        
+    }
+    .form-row input,select
+    {
+        margin-bottom: 15px;
+        
+    }
+}
+
+#doctors
+{
+   
+    
+    .row > div 
+    {
+        margin: 30px 0;
+        
+    }
+
+    .social-icon
+    {
+        background-color: rgba(255,255,255,.7);
+        width: 100%;
+        position: absolute;
+        bottom: 140px;
+        font-size: 25px;
+        visibility: hidden;
+        
+        opacity:0;
+        transition: ease-in-out visibility .5s, opacity 0.5s ;
+        
+        
+        a 
+        {
+            margin: 21px;
+            color: #223;
+            
+        }
+    }
+    .row > div:hover .social-icon
+    {
+        visibility: visible;
+        opacity:1;
+        transition: ease-in-out visibility opacity 0s, opacity 0.5s linear;
+    }
+    
+}
+footer
+{
+    background-color: #f3f6f7;
+    padding: 50px 70px;
+    li
+    {
+    list-style: none;
+    }
+}
